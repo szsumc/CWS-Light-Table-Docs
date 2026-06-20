@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CWS Light Table</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">CWS Light Table</a>
+    <div class="nav-links">
+      <a href="index.html" class="active" data-i18n="nav_home">Home</a>
+      <a href="release.html" data-i18n="nav_release">Release</a>
+      <a href="https://github.com/szsumc/CWS-Light-Table-Open-Source" target="_blank" data-i18n="nav_github">GitHub</a>
+    </div>
+    <div class="lang-switch">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="zh">中文</button>
+      <button class="lang-btn" data-lang="ja">日本語</button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+
+    <section class="hero">
+      <h1 data-i18n="hero_title">CWS Light Table</h1>
+      <p class="tagline" data-i18n="hero_tagline">A lightweight browser-based editor for simplified single-sheet CWS HTML documents.</p>
+    </section>
+
+    <section class="section section-anchor" id="about">
+      <h2 class="section-title" data-i18n="about_title">About</h2>
+      <p data-i18n="about_text">CWS Light Table is designed for practical table editing rather than full workbook authoring: open a CWS HTML file, edit values in a spreadsheet-like grid, filter and print the current sheet, import common workbook or text-like formats, export plain text formats, and save the result back as a standalone HTML file that opens directly in a browser.</p>
+    </section>
+
+    <section class="section section-anchor" id="features">
+      <h2 class="section-title" data-i18n="features_title">Features</h2>
+      <ul class="features">
+        <li data-i18n="feat_01">Open and save standalone CWS HTML</li>
+        <li data-i18n="feat_02">Import .xlsx, .xlsm, .xls</li>
+        <li data-i18n="feat_03">Import csv, tsv, txt, json, and xml</li>
+        <li data-i18n="feat_04">Plain-value grid editing with formula-bar support</li>
+        <li data-i18n="feat_05">Range, row, column, and whole-sheet selection</li>
+        <li data-i18n="feat_06">Copy, paste, fill-repeat, undo, and redo</li>
+        <li data-i18n="feat_07">Find and replace</li>
+        <li data-i18n="feat_08">Formal header-row control, filtering, and sorting</li>
+        <li data-i18n="feat_09">Page setup and browser print support</li>
+        <li data-i18n="feat_10">Export CSV, TSV, and TXT</li>
+        <li data-i18n="feat_11">Editable grid-size control through Grid Limits</li>
+        <li data-i18n="feat_12">Standalone saved-file parity for the implemented feature set</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <img src="images/top.jpg" alt="CWS Light Table screenshot" class="screenshot-img">
+    </section>
+
+    <section class="section section-anchor" id="quickstart">
+      <h2 class="section-title" data-i18n="quickstart_title">Quick Start</h2>
+      <p class="section-sub" data-i18n="quickstart_sub">Get up and running in two steps.</p>
+      <p style="font-size:0.9rem;color:#666;margin-bottom:8px" data-i18n="quickstart_req">Requirements: Node.js + npm</p>
+      <div class="code-block">
+        <span data-i18n="quickstart_install">npm install</span><br>
+        <span data-i18n="quickstart_build">npm run build</span><span class="comment">  <span data-i18n="quickstart_build_comment"># rebuild standalone runtime</span></span><br>
+        <span data-i18n="quickstart_dev">npm run dev</span><span class="comment">  <span data-i18n="quickstart_dev_comment"># start dev server</span></span>
+      </div>
+      <p style="font-size:0.85rem;color:#999;margin-top:8px" data-i18n="quickstart_url">Default: http://127.0.0.1:4173/</p>
+    </section>
+
+    <section class="section section-anchor" id="format">
+      <h2 class="section-title" data-i18n="format_title">Native Format</h2>
+      <div class="info-box" data-i18n="format_text">The native format is CWS HTML: an HTML document that embeds workbook data in a <code>script#websheet-model</code> element together with the lightweight runtime shell. Saved files open directly in any browser as a fully functional table editor.</div>
+    </section>
+
+    <section class="section section-anchor" id="opensource">
+      <h2 class="section-title" data-i18n="opensource_title">Open Source</h2>
+      <p data-i18n="opensource_text">Released under the MIT License. See the <a href="https://github.com/szsumc/CWS-Light-Table-Open-Source/blob/master/LICENSE">LICENSE</a> file for details.</p>
+    </section>
+
+    <div style="padding: 32px 0; text-align: center;">
+      <a href="release.html" class="btn" data-i18n="cta_release">View Releases</a>
+      <a href="https://github.com/szsumc/CWS-Light-Table-Open-Source" target="_blank" class="btn btn-outline" style="margin-left:12px" data-i18n="cta_github">GitHub Repository</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-links">
+      <a href="https://github.com/szsumc/CWS-Light-Table-Open-Source" target="_blank" data-i18n="footer_github">GitHub</a>
+      <a href="https://github.com/szsumc/CWS-Light-Table-Open-Source/tree/master/docs" target="_blank" data-i18n="footer_docs">Documentation</a>
+      <a href="https://github.com/szsumc/CWS-Light-Table-Open-Source/blob/master/CONTRIBUTING.md" target="_blank" data-i18n="footer_contributing">Contributing</a>
+      <a href="https://github.com/szsumc/CWS-Light-Table-Open-Source/blob/master/SECURITY.md" target="_blank" data-i18n="footer_security">Security</a>
+      <a href="https://github.com/szsumc/CWS-Light-Table-Open-Source/blob/master/CHANGELOG.md" target="_blank" data-i18n="footer_changelog">Changelog</a>
+    </div>
+    <div class="footer-copy" data-i18n="footer_copy">&copy; 2026 Mac Su. MIT License.</div>
+  </div>
+</footer>
+
+<script>
+const LANG = {
+  en: {
+    nav_home: "Home",
+    nav_release: "Release",
+    nav_github: "GitHub",
+    hero_title: "CWS Light Table",
+    hero_tagline: "A lightweight browser-based editor for simplified single-sheet CWS HTML documents.",
+    about_title: "About",
+    about_text: "CWS Light Table is designed for practical table editing rather than full workbook authoring: open a CWS HTML file, edit values in a spreadsheet-like grid, filter and print the current sheet, import common workbook or text-like formats, export plain text formats, and save the result back as a standalone HTML file that opens directly in a browser.",
+    features_title: "Features",
+    feat_01: "Open and save standalone CWS HTML",
+    feat_02: "Import .xlsx, .xlsm, .xls",
+    feat_03: "Import csv, tsv, txt, json, and xml",
+    feat_04: "Plain-value grid editing with formula-bar support",
+    feat_05: "Range, row, column, and whole-sheet selection",
+    feat_06: "Copy, paste, fill-repeat, undo, and redo",
+    feat_07: "Find and replace",
+    feat_08: "Formal header-row control, filtering, and sorting",
+    feat_09: "Page setup and browser print support",
+    feat_10: "Export CSV, TSV, and TXT",
+    feat_11: "Editable grid-size control through Grid Limits",
+    feat_12: "Standalone saved-file parity for the implemented feature set",
+    screenshot_label: "Screenshot",
+    quickstart_title: "Quick Start",
+    quickstart_sub: "Get up and running in two steps.",
+    quickstart_req: "Requirements: Node.js + npm",
+    quickstart_install: "npm install",
+    quickstart_build: "npm run build",
+    quickstart_build_comment: "# rebuild standalone runtime",
+    quickstart_dev: "npm run dev",
+    quickstart_dev_comment: "# start dev server",
+    quickstart_url: "Default: http://127.0.0.1:4173/",
+    format_title: "Native Format",
+    format_text: "The native format is CWS HTML: an HTML document that embeds workbook data in a script#websheet-model element together with the lightweight runtime shell. Saved files open directly in any browser as a fully functional table editor.",
+    opensource_title: "Open Source",
+    opensource_text: "Released under the MIT License. See the LICENSE file for details.",
+    cta_release: "View Releases",
+    cta_github: "GitHub Repository",
+    footer_github: "GitHub",
+    footer_docs: "Documentation",
+    footer_contributing: "Contributing",
+    footer_security: "Security",
+    footer_changelog: "Changelog",
+    footer_copy: "\u00a9 2026 Mac Su. MIT License."
+  },
+  zh: {
+    nav_home: "\u9996\u9875",
+    nav_release: "\u53d1\u5e03",
+    nav_github: "GitHub",
+    hero_title: "CWS Light Table",
+    hero_tagline: "\u8f7b\u91cf\u7ea7\u6d4f\u89c8\u5668\u7aef\u8868\u683c\u7f16\u8f91\u5668\uff0c\u4e13\u6ce8\u4e8e\u5355\u5de5\u4f5c\u8868 CWS HTML \u6587\u6863\u7684\u7f16\u8f91\u3002",
+    about_title: "\u5173\u4e8e",
+    about_text: "CWS Light Table \u4e13\u6ce8\u4e8e\u5b9e\u7528\u7684\u8868\u683c\u7f16\u8f91\u800c\u975e\u5b8c\u6574\u7684\u5de5\u4f5c\u7c3f\u5236\u4f5c\uff1a\u6253\u5f00 CWS HTML \u6587\u4ef6\uff0c\u5728\u7c7b\u4f3c\u7535\u5b50\u8868\u683c\u7684\u7f51\u683c\u4e2d\u7f16\u8f91\u6570\u503c\uff0c\u7b5b\u9009\u548c\u6253\u5370\u5f53\u524d\u5de5\u4f5c\u8868\uff0c\u5bfc\u5165\u5e38\u89c1\u5de5\u4f5c\u7c3f\u6216\u6587\u672c\u683c\u5f0f\uff0c\u5bfc\u51fa\u7eaf\u6587\u672c\u683c\u5f0f\uff0c\u5e76\u5c06\u7ed3\u679c\u4fdd\u5b58\u4e3a\u53ef\u76f4\u63a5\u5728\u6d4f\u89c8\u5668\u4e2d\u6253\u5f00\u7684\u72ec\u7acb HTML \u6587\u4ef6\u3002",
+    features_title: "\u529f\u80fd\u7279\u6027",
+    feat_01: "\u6253\u5f00\u548c\u4fdd\u5b58\u72ec\u7acb CWS HTML \u6587\u4ef6",
+    feat_02: "\u5bfc\u5165 .xlsx\u3001.xlsm\u3001.xls \u683c\u5f0f",
+    feat_03: "\u5bfc\u5165 csv\u3001tsv\u3001txt\u3001json \u548c xml \u683c\u5f0f",
+    feat_04: "\u652f\u6301\u516c\u5f0f\u680f\u7684\u7eaf\u6570\u503c\u7f51\u683c\u7f16\u8f91",
+    feat_05: "\u8303\u56f4\u3001\u884c\u3001\u5217\u548c\u5168\u5de5\u4f5c\u8868\u9009\u62e9",
+    feat_06: "\u590d\u5236\u3001\u7c98\u8d34\u3001\u586b\u5145\u3001\u64a4\u9500\u548c\u91cd\u505a",
+    feat_07: "\u67e5\u627e\u548c\u66ff\u6362",
+    feat_08: "\u8868\u5934\u884c\u63a7\u5236\u3001\u7b5b\u9009\u548c\u6392\u5e8f",
+    feat_09: "\u9875\u9762\u8bbe\u7f6e\u548c\u6d4f\u89c8\u5668\u6253\u5370\u652f\u6301",
+    feat_10: "\u5bfc\u51fa CSV\u3001TSV \u548c TXT",
+    feat_11: "\u901a\u8fc7\u7f51\u683c\u9650\u5236\u63a7\u5236\u53ef\u7f16\u8f91\u533a\u57df\u5927\u5c0f",
+    feat_12: "\u5df2\u5b9e\u73b0\u529f\u80fd\u7684\u72ec\u7acb\u4fdd\u5b58\u6587\u4ef6\u4e00\u81f4\u6027",
+    screenshot_label: "\u622a\u56fe\u5360\u4f4d",
+    quickstart_title: "\u5feb\u901f\u5f00\u59cb",
+    quickstart_sub: "\u4e24\u6b65\u5373\u53ef\u5f00\u59cb\u4f7f\u7528\u3002",
+    quickstart_req: "\u73af\u5883\u8981\u6c42\uff1aNode.js + npm",
+    quickstart_install: "npm install",
+    quickstart_build: "npm run build",
+    quickstart_build_comment: "# \u91cd\u65b0\u6784\u5efa\u72ec\u7acb\u8fd0\u884c\u65f6",
+    quickstart_dev: "npm run dev",
+    quickstart_dev_comment: "# \u542f\u52a8\u5f00\u53d1\u670d\u52a1\u5668",
+    quickstart_url: "\u9ed8\u8ba4\u5730\u5740\uff1ahttp://127.0.0.1:4173/",
+    format_title: "\u539f\u751f\u683c\u5f0f",
+    format_text: "\u539f\u751f\u683c\u5f0f\u4e3a CWS HTML\uff1a\u4e00\u79cd\u5c06\u5de5\u4f5c\u7c3f\u6570\u636e\u5d4c\u5165 script#websheet-model \u5143\u7d20\u7684 HTML \u6587\u6863\uff0c\u968f\u9644\u8f7b\u91cf\u7ea7\u8fd0\u884c\u65f6\u5916\u58f3\u3002\u4fdd\u5b58\u7684\u6587\u4ef6\u53ef\u5728\u4efb\u4f55\u6d4f\u89c8\u5668\u4e2d\u76f4\u63a5\u6253\u5f00\uff0c\u4f5c\u4e3a\u5168\u529f\u80fd\u8868\u683c\u7f16\u8f91\u5668\u4f7f\u7528\u3002",
+    opensource_title: "\u5f00\u6e90\u534f\u8bae",
+    opensource_text: "\u57fa\u4e8e MIT \u534f\u8bae\u5f00\u6e90\u3002\u8be6\u89c1 LICENSE \u6587\u4ef6\u3002",
+    cta_release: "\u67e5\u770b\u7248\u672c\u53d1\u5e03",
+    cta_github: "GitHub \u4ed3\u5e93",
+    footer_github: "GitHub",
+    footer_docs: "\u6587\u6863",
+    footer_contributing: "\u8d21\u732e\u6307\u5357",
+    footer_security: "\u5b89\u5168\u7b56\u7565",
+    footer_changelog: "\u66f4\u65b0\u65e5\u5fd7",
+    footer_copy: "\u00a9 2026 Mac Su\u3002MIT License\u3002"
+  },
+  ja: {
+    nav_home: "\u30db\u30fc\u30e0",
+    nav_release: "\u30ea\u30ea\u30fc\u30b9",
+    nav_github: "GitHub",
+    hero_title: "CWS Light Table",
+    hero_tagline: "\u8efd\u91cf\u30d6\u30e9\u30a6\u30b6\u30d9\u30fc\u30b9\u306e\u30c6\u30fc\u30d6\u30eb\u30a8\u30c7\u30a3\u30bf\u3002\u30b7\u30f3\u30d7\u30eb\u306a\u30b7\u30f3\u30b0\u30eb\u30b7\u30fc\u30c8 CWS HTML \u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\u7de8\u96c6\u306b\u5c02\u533a\u3057\u307e\u3059\u3002",
+    about_title: "\u6982\u8981",
+    about_text: "CWS Light Table \u306f\u3001\u672c\u683c\u7684\u306a\u30ef\u30fc\u30af\u30d6\u30c3\u30af\u4f5c\u6210\u3067\u306f\u306a\u304f\u3001\u5b9f\u7528\u7684\u306a\u30c6\u30fc\u30d6\u30eb\u7de8\u96c6\u306b\u7126\u70b9\u3092\u5f53\u3066\u3066\u3044\u307e\u3059\uff1aCWS HTML \u30d5\u30a1\u30a4\u30eb\u3092\u958b\u304d\u3001\u30b9\u30d7\u30ec\u30c3\u30c9\u30b7\u30fc\u30c8\u98a8\u306e\u30b0\u30ea\u30c3\u30c9\u3067\u5024\u3092\u7de8\u96c6\u3057\u3001\u73fe\u5728\u306e\u30b7\u30fc\u30c8\u3092\u30d5\u30a3\u30eb\u30bf\u30fc\u30fb\u5370\u5237\u3057\u3001\u4e00\u822c\u7684\u306a\u30ef\u30fc\u30af\u30d6\u30c3\u30af\u3084\u30c6\u30ad\u30b9\u30c8\u5f62\u5f0f\u3092\u30a4\u30f3\u30dd\u30fc\u30c8\u3057\u3001\u30d7\u30ec\u30fc\u30f3\u30c6\u30ad\u30b9\u30c8\u5f62\u5f0f\u3092\u30a8\u30af\u30b9\u30dd\u30fc\u30c8\u3057\u3001\u7d50\u679c\u3092\u30d6\u30e9\u30a6\u30b6\u3067\u76f4\u63a5\u958b\u3051\u308b\u30b9\u30bf\u30f3\u30c9\u30a2\u30ed\u30f3 HTML \u30d5\u30a1\u30a4\u30eb\u3068\u3057\u3066\u4fdd\u5b58\u3067\u304d\u307e\u3059\u3002",
+    features_title: "\u6a5f\u80fd",
+    feat_01: "\u30b9\u30bf\u30f3\u30c9\u30a2\u30ed\u30f3 CWS HTML \u306e\u958b\u9589\u3068\u4fdd\u5b58",
+    feat_02: ".xlsx\u3001.xlsm\u3001.xls \u306e\u30a4\u30f3\u30dd\u30fc\u30c8",
+    feat_03: "csv\u3001tsv\u3001txt\u3001json\u3001xml \u306e\u30a4\u30f3\u30dd\u30fc\u30c8",
+    feat_04: "\u6570\u5f0f\u30d0\u30fc\u5bfe\u5fdc\u306e\u30d7\u30ec\u30fc\u30f3\u5024\u30b0\u30ea\u30c3\u30c9\u7de8\u96c6",
+    feat_05: "\u7bc4\u56f2\u3001\u884c\u3001\u5217\u3001\u30b7\u30fc\u30c8\u5168\u4f53\u306e\u9078\u629e",
+    feat_06: "\u30b3\u30d4\u30fc\u3001\u30da\u30fc\u30b9\u30c8\u3001\u30d5\u30a3\u30eb\u7e70\u308a\u8fd4\u3057\u3001\u5143\u306b\u623b\u3059\u3001\u3084\u308a\u76f4\u3057",
+    feat_07: "\u691c\u7d22\u3068\u7f6e\u63db",
+    feat_08: "\u30d8\u30c3\u30c0\u30fc\u884c\u5236\u5fa1\u3001\u30d5\u30a3\u30eb\u30bf\u30fc\u3001\u30bd\u30fc\u30c8",
+    feat_09: "\u30da\u30fc\u30b8\u8a2d\u5b9a\u3068\u30d6\u30e9\u30a6\u30b6\u5370\u5237\u30b5\u30dd\u30fc\u30c8",
+    feat_10: "CSV\u3001TSV\u3001TXT \u306e\u30a8\u30af\u30b9\u30dd\u30fc\u30c8",
+    feat_11: "\u30b0\u30ea\u30c3\u30c9\u5236\u9650\u306b\u3088\u308b\u7de8\u96c6\u53ef\u80fd\u30b5\u30a4\u30ba\u306e\u8abf\u6574",
+    feat_12: "\u5b9f\u88c5\u6a5f\u80fd\u306e\u30b9\u30bf\u30f3\u30c9\u30a2\u30ed\u30f3\u4fdd\u5b58\u4e92\u63db\u6027",
+    screenshot_label: "\u30b9\u30af\u30ea\u30fc\u30f3\u30b7\u30e7\u30c3\u30c8",
+    quickstart_title: "\u30af\u30a4\u30c3\u30af\u30b9\u30bf\u30fc\u30c8",
+    quickstart_sub: "\uff12\u30b9\u30c6\u30c3\u30d7\u3067\u59cb\u3081\u3089\u308c\u307e\u3059\u3002",
+    quickstart_req: "\u5fc5\u8981\u74b0\u5883\uff1aNode.js + npm",
+    quickstart_install: "npm install",
+    quickstart_build: "npm run build",
+    quickstart_build_comment: "# \u30b9\u30bf\u30f3\u30c9\u30a2\u30ed\u30f3\u30e9\u30f3\u30bf\u30a4\u30e0\u3092\u518d\u30d3\u30eb\u30c9",
+    quickstart_dev: "npm run dev",
+    quickstart_dev_comment: "# \u958b\u767a\u30b5\u30fc\u30d0\u30fc\u3092\u8d77\u52d5",
+    quickstart_url: "\u30c7\u30d5\u30a9\u30eb\u30c8\uff1ahttp://127.0.0.1:4173/",
+    format_title: "\u30cd\u30a4\u30c6\u30a3\u30d6\u5f62\u5f0f",
+    format_text: "\u30cd\u30a4\u30c6\u30a3\u30d6\u5f62\u5f0f\u306f CWS HTML \u3067\u3059\u3002\u30ef\u30fc\u30af\u30d6\u30c3\u30af\u30c7\u30fc\u30bf\u3092 script#websheet-model \u306b\u57cb\u3081\u8fbc\u3093\u3060 HTML \u6587\u66f8\u3067\u3001\u8efd\u91cf\u30e9\u30f3\u30bf\u30a4\u30e0\u30b7\u30a7\u30eb\u304c\u4ed8\u5c5e\u3057\u307e\u3059\u3002\u4fdd\u5b58\u3055\u308c\u305f\u30d5\u30a1\u30a4\u30eb\u306f\u30d6\u30e9\u30a6\u30b6\u3067\u76f4\u63a5\u958b\u304d\u3001\u5168\u6a5f\u80fd\u306e\u30c6\u30fc\u30d6\u30eb\u30a8\u30c7\u30a3\u30bf\u3068\u3057\u3066\u4f7f\u7528\u3067\u304d\u307e\u3059\u3002",
+    opensource_title: "\u30aa\u30fc\u30d7\u30f3\u30bd\u30fc\u30b9",
+    opensource_text: "MIT \u30e9\u30a4\u30bb\u30f3\u30b9\u3067\u516c\u958b\u3055\u308c\u3066\u3044\u307e\u3059\u3002\u8a73\u7d30\u306f LICENSE \u30d5\u30a1\u30a4\u30eb\u3092\u3054\u89a7\u304f\u3060\u3055\u3044\u3002",
+    cta_release: "\u30ea\u30ea\u30fc\u30b9\u3092\u898b\u308b",
+    cta_github: "GitHub \u30ea\u30dd\u30b8\u30c8\u30ea",
+    footer_github: "GitHub",
+    footer_docs: "\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8",
+    footer_contributing: "\u30b3\u30f3\u30c8\u30ea\u30d3\u30e5\u30fc\u30b7\u30e7\u30f3",
+    footer_security: "\u30bb\u30ad\u30e5\u30ea\u30c6\u30a3",
+    footer_changelog: "\u30c1\u30a7\u30f3\u30b8\u30ed\u30b0",
+    footer_copy: "\u00a9 2026 Mac Su. MIT License."
+  }
+};
+
+function switchLang(lang) {
+  const data = LANG[lang];
+  if (!data) return;
+
+  document.querySelectorAll("[data-i18n]").forEach(function(el) {
+    var key = el.getAttribute("data-i18n");
+    if (data[key]) {
+      if (el.tagName === "A" && el.getAttribute("href") === "#") {
+        el.textContent = data[key];
+      } else {
+        el.textContent = data[key];
+      }
+    }
+  });
+
+  document.querySelectorAll(".lang-btn").forEach(function(btn) {
+    btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
+  });
+
+  document.documentElement.lang = lang === "zh" ? "zh-CN" : lang === "ja" ? "ja" : "en";
+  localStorage.setItem("cws-lang", lang);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  var saved = localStorage.getItem("cws-lang");
+  if (saved && LANG[saved]) {
+    switchLang(saved);
+  } else {
+    var navLang = (navigator.language || "").toLowerCase();
+    if (navLang.startsWith("zh")) {
+      switchLang("zh");
+    } else if (navLang.startsWith("ja")) {
+      switchLang("ja");
+    }
+  }
+
+  document.querySelectorAll(".lang-btn").forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      switchLang(this.getAttribute("data-lang"));
+    });
+  });
+});
+</script>
+
+</body>
+</html>
