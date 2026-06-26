@@ -35,9 +35,34 @@
     <section class="section" style="padding-top:0">
       <div class="release">
         <div class="release-header">
+          <span class="release-version" data-i18n="rel_012_version">v0.1.2</span>
+          <span class="release-date" data-i18n="rel_012_date">June 26, 2026</span>
+          <span class="release-tag" data-i18n="rel_012_tag">Latest</span>
+        </div>
+        <div class="release-notes">
+          <p data-i18n="rel_012_intro">Performance-architecture release with virtualized rendering for large datasets.</p>
+          <p style="margin-top:12px;font-weight:600" data-i18n="rel_012_highlights_title">Highlights:</p>
+          <ul>
+            <li data-i18n="rel_012_h01">Vertical virtualization for large row counts</li>
+            <li data-i18n="rel_012_h02">Horizontal virtualization for wide column counts</li>
+            <li data-i18n="rel_012_h03">Bulk write optimization for large paste and CSV import</li>
+            <li data-i18n="rel_012_h04">Row-delete and column-delete actions in View menu</li>
+            <li data-i18n="rel_012_h05">Fixed: blank-cell clipboard paste overwrite behavior</li>
+          </ul>
+          <p style="margin-top:16px">
+            <a href="https://github.com/szsumc/CWS-Light-Table-Open-Source/releases" target="_blank" class="btn" data-i18n="rel_012_download">View on GitHub</a>
+            <a href="Release/CWS%20Light%20Table_v0.1.2.zip" class="btn btn-outline" style="margin-left:8px" data-i18n="rel_012_dl_zip">Download ZIP</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title" data-i18n="past_title">Past Releases</h2>
+      <div class="release">
+        <div class="release-header">
           <span class="release-version" data-i18n="rel_011_version">v0.1.1</span>
           <span class="release-date" data-i18n="rel_011_date">June 20, 2026</span>
-          <span class="release-tag" data-i18n="rel_011_tag">Latest</span>
         </div>
         <div class="release-notes">
           <p data-i18n="rel_011_intro">First open-source repository release of CWS Light Table under the MIT license.</p>
@@ -69,11 +94,6 @@
           </p>
         </div>
       </div>
-    </section>
-
-    <section class="section">
-      <h2 class="section-title" data-i18n="past_title">Past Releases</h2>
-      <p class="section-sub" data-i18n="past_empty">No past releases yet.</p>
     </section>
 
     <div style="padding: 32px 0; text-align: center;">
@@ -128,8 +148,19 @@ const LANG = {
     rel_011_n04: "Published initial public documentation",
     rel_011_download: "View on GitHub",
     rel_011_dl_zip: "Download ZIP",
+    rel_012_version: "v0.1.2",
+    rel_012_date: "June 26, 2026",
+    rel_012_tag: "Latest",
+    rel_012_intro: "Performance-architecture release with virtualized rendering for large datasets.",
+    rel_012_highlights_title: "Highlights:",
+    rel_012_h01: "Vertical virtualization for large row counts",
+    rel_012_h02: "Horizontal virtualization for wide column counts",
+    rel_012_h03: "Bulk write optimization for large paste and CSV import",
+    rel_012_h04: "Row-delete and column-delete actions in View menu",
+    rel_012_h05: "Fixed: blank-cell clipboard paste overwrite behavior",
+    rel_012_download: "View on GitHub",
+    rel_012_dl_zip: "Download ZIP",
     past_title: "Past Releases",
-    past_empty: "No past releases yet.",
     cta_home: "Back to Home",
     footer_github: "GitHub",
     footer_docs: "Documentation",
@@ -168,8 +199,19 @@ const LANG = {
     rel_011_n04: "\u53d1\u5e03\u521d\u59cb\u516c\u5f00\u6587\u6863",
     rel_011_download: "\u5728 GitHub \u4e0a\u67e5\u770b",
     rel_011_dl_zip: "\u4e0b\u8f7d ZIP",
+    rel_012_version: "v0.1.2",
+    rel_012_date: "2026\u5e746\u670826\u65e5",
+    rel_012_tag: "\u6700\u65b0",
+    rel_012_intro: "\u6027\u80fd\u67b6\u6784\u53d1\u884c\u7248\uff0c\u9488\u5bf9\u5927\u578b\u6570\u636e\u96c6\u4f18\u5316\u865a\u62df\u5316\u6e32\u67d3\u3002",
+    rel_012_highlights_title: "\u4eae\u70b9\uff1a",
+    rel_012_h01: "\u7eb5\u5411\u865a\u62df\u5316\uff0c\u652f\u6301\u4e07\u884c\u6570\u636e\u6d41\u7545\u6eda\u52a8",
+    rel_012_h02: "\u6a2a\u5411\u865a\u62df\u5316\uff0c\u652f\u6301\u767e\u5217\u6570\u636e\u6d41\u7545\u6eda\u52a8",
+    rel_012_h03: "\u6279\u91cf\u5199\u5165\u4f18\u5316\uff0c\u5927\u5e45\u63d0\u5347\u7c98\u8d34\u548cCSV\u5bfc\u5165\u901f\u5ea6",
+    rel_012_h04: "View \u83dc\u5355\u65b0\u589e\u5220\u9664\u884c/\u5217\u529f\u80fd",
+    rel_012_h05: "\u4fee\u590d\uff1a\u7a7a\u767d\u5355\u5143\u683c\u590d\u5236\u540e\u65e0\u6cd5\u7c98\u8d34\u7684 bug",
+    rel_012_download: "\u5728 GitHub \u4e0a\u67e5\u770b",
+    rel_012_dl_zip: "\u4e0b\u8f7d ZIP",
     past_title: "\u8fc7\u5f80\u7248\u672c",
-    past_empty: "\u5c1a\u65e0\u5176\u4ed6\u7248\u672c\u3002",
     cta_home: "\u8fd4\u56de\u9996\u9875",
     footer_github: "GitHub",
     footer_docs: "\u6587\u6863",
@@ -208,8 +250,19 @@ const LANG = {
     rel_011_n04: "\u521d\u671f\u516c\u958b\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\u3092\u516c\u958b",
     rel_011_download: "GitHub \u3067\u898b\u308b",
     rel_011_dl_zip: "ZIP \u3092\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9",
+    rel_012_version: "v0.1.2",
+    rel_012_date: "2026\u5e746\u670826\u65e5",
+    rel_012_tag: "\u6700\u65b0",
+    rel_012_intro: "\u5927\u898f\u6a21\u30c7\u30fc\u30bf\u30bb\u30c3\u30c8\u5411\u3051\u4eee\u60f3\u5316\u30ec\u30f3\u30c0\u30ea\u30f3\u30b0\u3092\u6700\u9069\u5316\u3057\u305f\u30d1\u30d5\u30a9\u30fc\u30de\u30f3\u30b9\u30a2\u30fc\u30ad\u30c6\u30af\u30c1\u30e3\u30ea\u30ea\u30fc\u30b9\u3002",
+    rel_012_highlights_title: "\u30cf\u30a4\u30e9\u30a4\u30c8\uff1a",
+    rel_012_h01: "\u5927\u898f\u6a21\u884c\u6570\u306e\u5782\u76f4\u4eee\u60f3\u5316",
+    rel_012_h02: "\u5e83\u3044\u5217\u6570\u306e\u6c34\u5e73\u4eee\u60f3\u5316",
+    rel_012_h03: "\u5927\u898f\u6a21\u30da\u30fc\u30b9\u30c8/CSV\u30a4\u30f3\u30dd\u30fc\u30c8\u306e\u4e00\u62ec\u66f8\u304d\u8fbc\u307f\u6700\u9069\u5316",
+    rel_012_h04: "View \u30e1\u30cb\u30e5\u30fc\u306b\u884c/\u5217\u524a\u9664\u3092\u8ffd\u52a0",
+    rel_012_h05: "\u4fee\u6b63\uff1a\u7a7a\u767d\u30bb\u30eb\u30b3\u30d4\u30fc\u5f8c\u306e\u30da\u30fc\u30b9\u30c8\u4e0d\u5177\u5408",
+    rel_012_download: "GitHub \u3067\u898b\u308b",
+    rel_012_dl_zip: "ZIP \u3092\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9",
     past_title: "\u904e\u53bb\u306e\u30ea\u30ea\u30fc\u30b9",
-    past_empty: "\u307e\u3060\u3042\u308a\u307e\u305b\u3093\u3002",
     cta_home: "\u30db\u30fc\u30e0\u306b\u623b\u308b",
     footer_github: "GitHub",
     footer_docs: "\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8",
