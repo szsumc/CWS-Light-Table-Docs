@@ -335,6 +335,26 @@ img {
   color: #111;
 }
 
+.footer-author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.footer-author-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.footer-qr {
+  width: 72px;
+  height: 72px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+}
+
 .footer-copy {
   margin-top: 16px;
   font-size: 0.8rem;
