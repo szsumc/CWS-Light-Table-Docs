@@ -30,7 +30,7 @@
 
     <section class="hero">
       <h1 data-i18n="hero_title">CWS Light Table</h1>
-      <p class="tagline" data-i18n="hero_tagline">A lightweight browser-based editor for simplified single-sheet CWS HTML documents.</p>
+      <p class="tagline" data-i18n="hero_tagline">A lightweight browser-based editor for simplified single-sheet CWS HTML documents, with a quick-action toolbar and dedicated print rendering.</p>
       <p style="margin-top:24px">
         <a href="https://szsumc.github.io/CWS-Light-Table/" target="_blank" class="btn" data-i18n="cta_launch">Launch CWS Light Table</a>
       </p>
@@ -48,11 +48,12 @@
         <li data-i18n="feat_02">Import .xlsx, .xlsm, .xls</li>
         <li data-i18n="feat_03">Import csv, tsv, txt, json, and xml</li>
         <li data-i18n="feat_04">Plain-value grid editing with formula-bar support</li>
+        <li data-i18n="feat_14">Quick-action icon toolbar for common commands</li>
         <li data-i18n="feat_05">Range, row, column, and whole-sheet selection</li>
         <li data-i18n="feat_06">Copy, paste, fill-repeat, undo, and redo</li>
         <li data-i18n="feat_07">Find and replace</li>
         <li data-i18n="feat_08">Formal header-row control, filtering, and sorting</li>
-        <li data-i18n="feat_09">Page setup and browser print support</li>
+        <li data-i18n="feat_09">Page setup and dedicated browser print rendering</li>
         <li data-i18n="feat_10">Export CSV, TSV, and TXT</li>
         <li data-i18n="feat_11">Editable grid-size control through Grid Limits</li>
         <li data-i18n="feat_12">Standalone saved-file parity for the implemented feature set</li>
@@ -121,7 +122,7 @@ const LANG = {
     nav_release: "Release",
     nav_github: "GitHub",
     hero_title: "CWS Light Table",
-    hero_tagline: "A lightweight browser-based editor for simplified single-sheet CWS HTML documents.",
+    hero_tagline: "A lightweight browser-based editor for simplified single-sheet CWS HTML documents, with a quick-action toolbar and dedicated print rendering.",
     about_title: "About",
     about_text: "CWS Light Table is designed for practical table editing rather than full workbook authoring: open a CWS HTML file, edit values in a spreadsheet-like grid, filter and print the current sheet, import common workbook or text-like formats, export plain text formats, and save the result back as a standalone HTML file that opens directly in a browser.",
     features_title: "Features",
@@ -129,11 +130,12 @@ const LANG = {
     feat_02: "Import .xlsx, .xlsm, .xls",
     feat_03: "Import csv, tsv, txt, json, and xml",
     feat_04: "Plain-value grid editing with formula-bar support",
+    feat_14: "Quick-action icon toolbar for common commands",
     feat_05: "Range, row, column, and whole-sheet selection",
     feat_06: "Copy, paste, fill-repeat, undo, and redo",
     feat_07: "Find and replace",
     feat_08: "Formal header-row control, filtering, and sorting",
-    feat_09: "Page setup and browser print support",
+    feat_09: "Page setup and dedicated browser print rendering",
     feat_10: "Export CSV, TSV, and TXT",
     feat_11: "Editable grid-size control through Grid Limits",
     feat_12: "Standalone saved-file parity for the implemented feature set",
@@ -168,7 +170,7 @@ const LANG = {
     nav_release: "\u53d1\u5e03",
     nav_github: "GitHub",
     hero_title: "CWS Light Table",
-    hero_tagline: "\u8f7b\u91cf\u7ea7\u6d4f\u89c8\u5668\u7aef\u8868\u683c\u7f16\u8f91\u5668\uff0c\u4e13\u6ce8\u4e8e\u5355\u5de5\u4f5c\u8868 CWS HTML \u6587\u6863\u7684\u7f16\u8f91\u3002",
+    hero_tagline: "\u8f7b\u91cf\u7ea7\u6d4f\u89c8\u5668\u7aef\u8868\u683c\u7f16\u8f91\u5668\uff0c\u914d\u5907\u5feb\u6377\u5de5\u5177\u680f\u548c\u4e13\u7528\u6253\u5370\u6e32\u67d3\uff0c\u4e13\u6ce8\u4e8e\u5355\u5de5\u4f5c\u8868 CWS HTML \u6587\u6863\u7684\u7f16\u8f91\u3002",
     about_title: "\u5173\u4e8e",
     about_text: "CWS Light Table \u4e13\u6ce8\u4e8e\u5b9e\u7528\u7684\u8868\u683c\u7f16\u8f91\u800c\u975e\u5b8c\u6574\u7684\u5de5\u4f5c\u7c3f\u5236\u4f5c\uff1a\u6253\u5f00 CWS HTML \u6587\u4ef6\uff0c\u5728\u7c7b\u4f3c\u7535\u5b50\u8868\u683c\u7684\u7f51\u683c\u4e2d\u7f16\u8f91\u6570\u503c\uff0c\u7b5b\u9009\u548c\u6253\u5370\u5f53\u524d\u5de5\u4f5c\u8868\uff0c\u5bfc\u5165\u5e38\u89c1\u5de5\u4f5c\u7c3f\u6216\u6587\u672c\u683c\u5f0f\uff0c\u5bfc\u51fa\u7eaf\u6587\u672c\u683c\u5f0f\uff0c\u5e76\u5c06\u7ed3\u679c\u4fdd\u5b58\u4e3a\u53ef\u76f4\u63a5\u5728\u6d4f\u89c8\u5668\u4e2d\u6253\u5f00\u7684\u72ec\u7acb HTML \u6587\u4ef6\u3002",
     features_title: "\u529f\u80fd\u7279\u6027",
@@ -176,11 +178,12 @@ const LANG = {
     feat_02: "\u5bfc\u5165 .xlsx\u3001.xlsm\u3001.xls \u683c\u5f0f",
     feat_03: "\u5bfc\u5165 csv\u3001tsv\u3001txt\u3001json \u548c xml \u683c\u5f0f",
     feat_04: "\u652f\u6301\u516c\u5f0f\u680f\u7684\u7eaf\u6570\u503c\u7f51\u683c\u7f16\u8f91",
+    feat_14: "\u56fe\u6807\u5de5\u5177\u680f\u5feb\u6377\u64cd\u4f5c",
     feat_05: "\u8303\u56f4\u3001\u884c\u3001\u5217\u548c\u5168\u5de5\u4f5c\u8868\u9009\u62e9",
     feat_06: "\u590d\u5236\u3001\u7c98\u8d34\u3001\u586b\u5145\u3001\u64a4\u9500\u548c\u91cd\u505a",
     feat_07: "\u67e5\u627e\u548c\u66ff\u6362",
     feat_08: "\u8868\u5934\u884c\u63a7\u5236\u3001\u7b5b\u9009\u548c\u6392\u5e8f",
-    feat_09: "\u9875\u9762\u8bbe\u7f6e\u548c\u6d4f\u89c8\u5668\u6253\u5370\u652f\u6301",
+    feat_09: "\u9875\u9762\u8bbe\u7f6e\u548c\u4e13\u7528\u6253\u5370\u6e32\u67d3",
     feat_10: "\u5bfc\u51fa CSV\u3001TSV \u548c TXT",
     feat_11: "\u901a\u8fc7\u7f51\u683c\u9650\u5236\u63a7\u5236\u53ef\u7f16\u8f91\u533a\u57df\u5927\u5c0f",
     feat_12: "\u5df2\u5b9e\u73b0\u529f\u80fd\u7684\u72ec\u7acb\u4fdd\u5b58\u6587\u4ef6\u4e00\u81f4\u6027",
@@ -215,7 +218,7 @@ const LANG = {
     nav_release: "\u30ea\u30ea\u30fc\u30b9",
     nav_github: "GitHub",
     hero_title: "CWS Light Table",
-    hero_tagline: "\u8efd\u91cf\u30d6\u30e9\u30a6\u30b6\u30d9\u30fc\u30b9\u306e\u30c6\u30fc\u30d6\u30eb\u30a8\u30c7\u30a3\u30bf\u3002\u30b7\u30f3\u30d7\u30eb\u306a\u30b7\u30f3\u30b0\u30eb\u30b7\u30fc\u30c8 CWS HTML \u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\u7de8\u96c6\u306b\u5c02\u533a\u3057\u307e\u3059\u3002",
+    hero_tagline: "\u8efd\u91cf\u30d6\u30e9\u30a6\u30b6\u30d9\u30fc\u30b9\u306e\u30c6\u30fc\u30d6\u30eb\u30a8\u30c7\u30a3\u30bf\u3002\u30af\u30a4\u30c3\u30af\u30a2\u30af\u30b7\u30e7\u30f3\u30c4\u30fc\u30eb\u30d0\u30fc\u3084\u5c02\u7528\u5370\u5237\u30ec\u30f3\u30c0\u30ea\u30f3\u30b0\u3092\u5099\u3048\u3001\u30b7\u30f3\u30d7\u30eb\u306a\u30b7\u30f3\u30b0\u30eb\u30b7\u30fc\u30c8 CWS HTML \u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\u7de8\u96c6\u306b\u5c02\u533a\u3057\u307e\u3059\u3002",
     about_title: "\u6982\u8981",
     about_text: "CWS Light Table \u306f\u3001\u672c\u683c\u7684\u306a\u30ef\u30fc\u30af\u30d6\u30c3\u30af\u4f5c\u6210\u3067\u306f\u306a\u304f\u3001\u5b9f\u7528\u7684\u306a\u30c6\u30fc\u30d6\u30eb\u7de8\u96c6\u306b\u7126\u70b9\u3092\u5f53\u3066\u3066\u3044\u307e\u3059\uff1aCWS HTML \u30d5\u30a1\u30a4\u30eb\u3092\u958b\u304d\u3001\u30b9\u30d7\u30ec\u30c3\u30c9\u30b7\u30fc\u30c8\u98a8\u306e\u30b0\u30ea\u30c3\u30c9\u3067\u5024\u3092\u7de8\u96c6\u3057\u3001\u73fe\u5728\u306e\u30b7\u30fc\u30c8\u3092\u30d5\u30a3\u30eb\u30bf\u30fc\u30fb\u5370\u5237\u3057\u3001\u4e00\u822c\u7684\u306a\u30ef\u30fc\u30af\u30d6\u30c3\u30af\u3084\u30c6\u30ad\u30b9\u30c8\u5f62\u5f0f\u3092\u30a4\u30f3\u30dd\u30fc\u30c8\u3057\u3001\u30d7\u30ec\u30fc\u30f3\u30c6\u30ad\u30b9\u30c8\u5f62\u5f0f\u3092\u30a8\u30af\u30b9\u30dd\u30fc\u30c8\u3057\u3001\u7d50\u679c\u3092\u30d6\u30e9\u30a6\u30b6\u3067\u76f4\u63a5\u958b\u3051\u308b\u30b9\u30bf\u30f3\u30c9\u30a2\u30ed\u30f3 HTML \u30d5\u30a1\u30a4\u30eb\u3068\u3057\u3066\u4fdd\u5b58\u3067\u304d\u307e\u3059\u3002",
     features_title: "\u6a5f\u80fd",
@@ -223,11 +226,12 @@ const LANG = {
     feat_02: ".xlsx\u3001.xlsm\u3001.xls \u306e\u30a4\u30f3\u30dd\u30fc\u30c8",
     feat_03: "csv\u3001tsv\u3001txt\u3001json\u3001xml \u306e\u30a4\u30f3\u30dd\u30fc\u30c8",
     feat_04: "\u6570\u5f0f\u30d0\u30fc\u5bfe\u5fdc\u306e\u30d7\u30ec\u30fc\u30f3\u5024\u30b0\u30ea\u30c3\u30c9\u7de8\u96c6",
+    feat_14: "\u30a2\u30a4\u30b3\u30f3\u30c4\u30fc\u30eb\u30d0\u30fc\u3067\u4e00\u822c\u7684\u306a\u64cd\u4f5c\u3092\u30af\u30a4\u30c3\u30af\u30a2\u30af\u30bb\u30b9",
     feat_05: "\u7bc4\u56f2\u3001\u884c\u3001\u5217\u3001\u30b7\u30fc\u30c8\u5168\u4f53\u306e\u9078\u629e",
     feat_06: "\u30b3\u30d4\u30fc\u3001\u30da\u30fc\u30b9\u30c8\u3001\u30d5\u30a3\u30eb\u7e70\u308a\u8fd4\u3057\u3001\u5143\u306b\u623b\u3059\u3001\u3084\u308a\u76f4\u3057",
     feat_07: "\u691c\u7d22\u3068\u7f6e\u63db",
     feat_08: "\u30d8\u30c3\u30c0\u30fc\u884c\u5236\u5fa1\u3001\u30d5\u30a3\u30eb\u30bf\u30fc\u3001\u30bd\u30fc\u30c8",
-    feat_09: "\u30da\u30fc\u30b8\u8a2d\u5b9a\u3068\u30d6\u30e9\u30a6\u30b6\u5370\u5237\u30b5\u30dd\u30fc\u30c8",
+    feat_09: "\u30da\u30fc\u30b8\u8a2d\u5b9a\u3068\u5c02\u7528\u30d6\u30e9\u30a6\u30b6\u5370\u5237\u30ec\u30f3\u30c0\u30ea\u30f3\u30b0",
     feat_10: "CSV\u3001TSV\u3001TXT \u306e\u30a8\u30af\u30b9\u30dd\u30fc\u30c8",
     feat_11: "\u30b0\u30ea\u30c3\u30c9\u5236\u9650\u306b\u3088\u308b\u7de8\u96c6\u53ef\u80fd\u30b5\u30a4\u30ba\u306e\u8abf\u6574",
     feat_12: "\u5b9f\u88c5\u6a5f\u80fd\u306e\u30b9\u30bf\u30f3\u30c9\u30a2\u30ed\u30f3\u4fdd\u5b58\u4e92\u63db\u6027",
